@@ -1,0 +1,123 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 24px 48px;
+  background-color: #F5F5F5;
+}
+
+header {
+  color: #456688;
+}
+
+/* Form styles */
+textarea {
+  display: block;
+  line-height: 1.5;
+  border-radius: 0.4rem;
+  padding: 1em;
+}
+
+textarea,
+form select {
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+}
+
+form select, 
+form button {
+  display: inline-block;
+  margin: 2rem 1rem 0 0;
+  height: 2rem;
+}
+form select {
+  text-indent: 4px;
+  width: 100px;
+}
+#addNoteBtn {
+  width: 7rem;
+  background-color: #456688;
+  color: #FFFFFF;
+  border-radius: 0.4rem;
+  border: 0;
+  transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+}
+
+#addNoteBtn:hover {
+  cursor: pointer;
+  background-color: #7ba4ce;
+}
+
+
+/* Note Styles */
+#notes {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.note {
+  width: 24rem;
+  height: 20rem;
+  font-size: 1.4rem;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 1.2rem 1.6rem;
+  margin: 2.4rem 2.4rem 0 0;
+  box-shadow: 0 0.9rem 1.2rem rgba(0,0,0, 0.1);
+  position: relative;
+}
+
+.note-text {
+  height: 100%;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+.note.red {
+  background-color: lightcoral;
+}
+
+.note.blue {
+  background-color: lightskyblue;
+}
+.note.green {
+  background-color: lightgreen;
+}
+.note.yellow {
+  background-color:  gold;
+}
+
+.note .note-delete {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 0.2rem;
+  right: 0.2rem;
+  border-radius: 0.4rem;
+  color: #999;
+  text-align: center;
+}
+
+.note .note-hide {
+  display: none;
+}
+
+.note .icon:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+.note .icon{
+  cursor: pointer;
+  margin: 1%;
+}
